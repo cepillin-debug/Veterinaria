@@ -1,99 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veterinaria Sanchez Padre</title>
     <link rel="icon" href="IMG/Perro.jpg">
-</head> 
 
-<body>
 
-    <header  style= "text-align: center;">
-        <h1
-        style="background-color: #ECE29D;"
-    >Veterinaria Sanchez Padre</h1>
-    </header>
-    <!-- background es para color de fondo -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
 
-    <br>
-      <!-- "br" salto de linea -->
-    
-    <div style="display: flex; align-items: center; gap: 30px; padding-left: 50px;">
+<body style="margin: 0px">
+<header>
 
-    <!-- "div" para se parar textos/imagenes -->
-    <!-- "flex: display;" organiza todo dentro de una linea horizontal -->
-    <!-- "align-items: center;" centra los elementos horizontalmente -->
-    <!-- "gap: 30px;" establece el espacio entre los elementos -->
-    <!-- "padding-left: 50px;" establece el espacio entre el elemento y la izquierda -->
+    <nav class="navbar bg-body-tertiary sticky-top">
+        <div class="container-fluid">
 
-        <img src="IMG/Veterinariaft.jpg" 
-        alt="Logo Veterinaria" 
-        width="100"
-        height="100">
+            <a class="navbar-brand" href="#">Veterinaria Sanchez Padre</a>
 
-        <!-- "width y height" ancho y altura -->
+            <ul class="navbar-nav d-flex flex-row gap-4">
 
-        <a href="HTML/somos.html"
-        style="color: black; 
-        font-weight: bold; 
-        text-decoration: none;"
-        >Quienes somos</a>
+                <li class="nav-item">
+                    <a class="nav-link active" href="Veterinaria.html">Inicio</a>
+                </li>
 
-        <!-- "style=color: black;" cambia el color del texto -->
-        <!-- "font-weight: bold;" hace que el texto sea en negrita -->
-        <!-- "text-decoration: none;" quita el subrayado del texto -->
+                <li class="nav-item">
+                    <a class="nav-link" href="HTML/quienes_somos.html">Nosotros</a>
+                </li>
 
-        <a href="HTML/contacto.html" 
-        style="color: black; 
-        font-weight: bold; 
-        text-decoration: none;"
-        >Contacto</a>   
+                <li class="nav-item">
+                    <a class="nav-link" href="HTML/contacto.html">Contacto</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                        href="https://www.youtube.com/watch?v=5vy1e4tOXZ0&list=RD5vy1e4tOXZ0&start_radio=1">
+                        <img src="IMG/igicon.png" width="30px" height="30px" alt="Logo IG">
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+</header>
+
+
+<div id="Carrusel1" class="carousel slide">
+
+    <div class="carousel-indicators">
+
+        <button type="button" data-bs-target="#Carrusel1" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1">
+        </button>
+
+        <button type="button" data-bs-target="#Carrusel1" data-bs-slide-to="1" aria-label="Slide 2">
+        </button>
+
+        <button type="button" data-bs-target="#Carrusel1" data-bs-slide-to="2" aria-label="Slide 3">
+        </button>
 
     </div>
 
-<br>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
 
-    <h2 style=" text-align: justify; font-family: Times New Roman; text-align: center;">
+            <img src="IMG/Golden.png" class="d-block 
+            w-100" height="380px" alt="IMG Golden">
 
-        Conocenos un poco
-
-        <div style="font-family: Times New Roman; font-size: 15px; padding: 50px;">
-
-                En Centro Médico Veterinario Oriente brindamos atención a caninos y felinos.
-       <br> 
-       Nuestro equipo se encuentra especializado en medicina felina, certificado en manejo cat friendly y en constante capacitación, siendo pioneros en la Región de Los Lagos.
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Medicina Canina</h5>
+                <p>Cuidado integral y terapias complementarias para el bienestar de tus mejores amigos.</p>
+            </div>
 
         </div>
 
-    </h2>
+        <div class="carousel-item">
+            <img src="IMG/Cat.jpg" class="d-block 
+            w-100" height="380px" alt="IMG Cat">
 
-<br>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Medicina Felina</h5>
+                <p>Un enfoque adaptado a su naturaleza sensible, combinando la clínica tradicional con bienestar natural.</p>
+            </div>
 
-    <h3 style= "text-align: justify; font-family: Times New Roman; text-align: center;">
-        Nuestros servicios 
-        
-        <div>
+        </div>
 
-            
+        <div class="carousel-item">
+            <img src="IMG/Hamster.png" class="d-block 
+            w-100" height="380px" alt="IMG Hamster">
 
-        </div> 
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Especialistas en animales pequeños</h5>
+                <p>Porque los más pequeños de la casa también merecen la máxima atención. Tratamos hámsters, conejos y exóticos con dosis y cuidados precisos para su tamaño.</p>
+            </div>
 
-    </h3>
+        </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#Carrusel1" data-bs-slide="prev">
+
+        <span class="carousel-control-prev-icon" aria-hidden="true">
+        </span>
+
+        <span class="visually-hidden">
+            Anterior
+        </span>
+
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#Carrusel1" data-bs-slide="next">
+
+        <span class="carousel-control-next-icon" aria-hidden="true">
+        </span>
+
+        <span class="visually-hidden">
+            Siguiente
+        </span>
+
+    </button>
+</div>
 
 
-    <nav>
-        <ul>
-
-        </ul>
-    </nav>  
-    <section>
-
-    </section>
-
-    <footer>
-    </footer> 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
